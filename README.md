@@ -6,10 +6,11 @@ Este repositorio contiene páginas Markdown (MD) que incluyen diagramas UML util
 ### Diagrama de Casos de Uso
 
 ```mermaid
-usecase
-  :Usuario: --> (Iniciar sesión)
-  :Usuario: --> (Consultar información)
-  (Iniciar sesión) ..> (Recuperar contraseña) : <<include>>
+graph TD
+  actor[Usuario]
+  actor --> login[Iniciar sesión]
+  actor --> info[Consultar información]
+  login -- «include» --> recuperar[Recuperar contraseña]
 ```
 
 ### Diagrama de Secuencia
