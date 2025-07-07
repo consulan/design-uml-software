@@ -49,15 +49,19 @@ erDiagram
 
 ```mermaid
 requirementDiagram
-  requirement req1 {
-    id: 1
-    text: El sistema debe permitir el registro de usuarios.
-  }
-  requirement req2 {
-    id: 2
-    text: El sistema debe enviar notificaciones por correo.
-  }
-  req1 - satisfiedBy -> req2
+
+requirement req1 {
+  id: 1
+  text: El sistema debe permitir el registro de usuarios.
+}
+
+requirement req2 {
+  id: 2
+  text: El sistema debe enviar notificaciones por correo.
+}
+
+req1 - SATISFIES -> req2
+
 ```
 
 Repositorio para realizar diseño por medio de mermaid de software.
